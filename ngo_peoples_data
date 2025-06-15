@@ -17,7 +17,21 @@
       "days_remaining": 30,
       "preferred_payment_method": "Mobile Banking",
       "all_payment_ending_date": "2023-11-15",
-      "company_percentage": 10
+      "company_percentage": 10,
+      "payment_history": [
+        {
+          "amount": 500,
+          "date": "2023-09-01"
+        },
+        {
+          "amount": 1000,
+          "date": "2023-09-15"
+        },
+        {
+          "amount": 1000,
+          "date": "2023-10-01"
+        }
+      ]
     },
     {
       "id": 2,
@@ -35,7 +49,17 @@
       "days_remaining": 45,
       "preferred_payment_method": "Bank Transfer",
       "all_payment_ending_date": "2023-11-25",
-      "company_percentage": 10
+      "company_percentage": 10,
+      "payment_history": [
+        {
+          "amount": 600,
+          "date": "2023-09-05"
+        },
+        {
+          "amount": 600,
+          "date": "2023-09-20"
+        }
+      ]
     },
     {
       "id": 3,
@@ -53,7 +77,13 @@
       "days_remaining": 60,
       "preferred_payment_method": "Cash",
       "all_payment_ending_date": "2023-11-20",
-      "company_percentage": 10
+      "company_percentage": 10,
+      "payment_history": [
+        {
+          "amount": 500,
+          "date": "2023-09-15"
+        }
+      ]
     },
     {
       "id": 4,
@@ -71,7 +101,8 @@
       "days_remaining": null,
       "preferred_payment_method": null,
       "all_payment_ending_date": null,
-      "company_percentage": 0
+      "company_percentage": 0,
+      "payment_history": []
     },
     {
       "id": 5,
@@ -89,7 +120,25 @@
       "days_remaining": 0,
       "preferred_payment_method": "Mobile Banking",
       "all_payment_ending_date": "2023-10-05",
-      "company_percentage": 10
+      "company_percentage": 10,
+      "payment_history": [
+        {
+          "amount": 1000,
+          "date": "2023-09-01"
+        },
+        {
+          "amount": 1000,
+          "date": "2023-09-15"
+        },
+        {
+          "amount": 1000,
+          "date": "2023-09-30"
+        },
+        {
+          "amount": 1000,
+          "date": "2023-10-05"
+        }
+      ]
     },
     {
       "id": 6,
@@ -107,7 +156,17 @@
       "days_remaining": 20,
       "preferred_payment_method": "Bank Transfer",
       "all_payment_ending_date": "2023-10-15",
-      "company_percentage": 10
+      "company_percentage": 10,
+      "payment_history": [
+        {
+          "amount": 500,
+          "date": "2023-09-10"
+        },
+        {
+          "amount": 1000,
+          "date": "2023-09-25"
+        }
+      ]
     },
     {
       "id": 7,
@@ -125,7 +184,13 @@
       "days_remaining": 0,
       "preferred_payment_method": "Cash",
       "all_payment_ending_date": "2023-10-01",
-      "company_percentage": 10
+      "company_percentage": 10,
+      "payment_history": [
+        {
+          "amount": 1000,
+          "date": "2023-10-01"
+        }
+      ]
     },
     {
       "id": 8,
@@ -143,7 +208,17 @@
       "days_remaining": 15,
       "preferred_payment_method": "Mobile Banking",
       "all_payment_ending_date": "2023-10-15",
-      "company_percentage": 10
+      "company_percentage": 10,
+      "payment_history": [
+        {
+          "amount": 500,
+          "date": "2023-09-15"
+        },
+        {
+          "amount": 250,
+          "date": "2023-09-30"
+        }
+      ]
     },
     {
       "id": 9,
@@ -161,7 +236,8 @@
       "days_remaining": 10,
       "preferred_payment_method": "Bank Transfer",
       "all_payment_ending_date": "2023-10-20",
-      "company_percentage": 0
+      "company_percentage": 0,
+      "payment_history": []
     },
     {
       "id": 10,
@@ -179,9 +255,22 @@
       "days_remaining": 0,
       "preferred_payment_method": "Cash",
       "all_payment_ending_date": "2023-09-28",
-      "company_percentage": 10
+      "company_percentage": 10,
+      "payment_history": [
+        {
+          "amount": 1000,
+          "date": "2023-09-01"
+        },
+        {
+          "amount": 1000,
+          "date": "2023-09-15"
+        },
+        {
+          "amount": 1000,
+          "date": "2023-09-28"
+        }
+      ]
     },
-
     {
       "id": 11,
       "name": "Lopez",
@@ -198,7 +287,21 @@
       "days_remaining": 0,
       "preferred_payment_method": "Cash",
       "all_payment_ending_date": "2023-09-28",
-      "company_percentage": 10
+      "company_percentage": 10,
+      "payment_history": [
+        {
+          "amount": 1000,
+          "date": "2023-09-01"
+        },
+        {
+          "amount": 1000,
+          "date": "2023-09-15"
+        },
+          {
+          "amount": 1500,
+          "date": "2023-09-28"
+        }
+      ]
     }
   ]
 }
