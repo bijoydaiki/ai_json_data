@@ -16,7 +16,7 @@
       "last_payment_date": "2023-10-15",
       "days_remaining": 30,
       "preferred_payment_method": "Mobile Banking",
-      "all_payment_ending_date": "2023-11-15",
+      "all_payment_ending_date": "2025-01-04",
       "company_percentage": 10,
       "payment_history": [
         {
@@ -99,8 +99,8 @@
       "status": "No Pledge",
       "last_payment_date": null,
       "days_remaining": null,
-      "preferred_payment_method": null,
-      "all_payment_ending_date": null,
+      "preferred_payment_method": "2023-11-25",
+      "all_payment_ending_date": "2025-4-25",
       "company_percentage": 0,
       "payment_history": []
     },
