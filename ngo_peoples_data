@@ -99,8 +99,8 @@
       "status": "No Pledge",
       "last_payment_date": null,
       "days_remaining": null,
-      "preferred_payment_method": "2023-11-25",
-      "all_payment_ending_date": "2025-4-25",
+      "preferred_payment_method": null,
+      "all_payment_ending_date": "2025-04-25",
       "company_percentage": 0,
       "payment_history": []
     },
@@ -175,8 +175,8 @@
       "phone": "+1234567896",
       "location": "Khulna",
       "donation_count": 1,
-      "total_paid": 400,
-      "pledged_amount": 200,
+      "total_paid": 1000,
+      "pledged_amount": 1000,
       "pending_amount": 0,
       "payment_percentage": 100.00,
       "status": "Fully Paid",
@@ -216,10 +216,6 @@
         },
         {
           "amount": 250,
-          "date": "2023-09-30"
-        },
-        {
-          "amount": 450,
           "date": "2023-09-30"
         }
       ]
@@ -273,8 +269,6 @@
           "amount": 1000,
           "date": "2023-09-28"
         }
-      ]
-    }
       ]
     }
   ]
