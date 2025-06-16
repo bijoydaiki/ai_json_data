@@ -1,275 +1,358 @@
 {
-  "status": "success",
-  "data": [
-    {
-      "id": 1,
-      "name": "John Doe",
-      "email": "johndoe@example.com",
-      "phone": "+1234567890",
-      "location": "Khulna",
-      "donation_count": 5,
-      "total_paid": 2500,
-      "pledged_amount": 3000,
-      "pending_amount": 500,
-      "payment_percentage": 83.33,
-      "status": "Active Donor",
-      "last_payment_date": "2023-10-15",
-      "days_remaining": 30,
-      "preferred_payment_method": "Mobile Banking",
-      "all_payment_ending_date": "2025-01-04",
-      "company_percentage": 10,
-      "payment_history": [
+  "financial_summary": {
+    "success": true,
+    "data": {
+      "totalRevenue": 2750000.50,
+      "totalExpenses": 1890000.25,
+      "netProfit": 859999.75,
+      "totalAssets": 5200000.00,
+      "totalLiabilities": 2100000.00,
+      "equity": 3100000.00,
+      "cashFlow": 650000.30,
+      "currentRatio": 2.48,
+      "profitMargin": 31.27,
+      "lastUpdated": "2025-06-15T10:30:00Z"
+    }
+  },
+
+  "transactions": {
+    "success": true,
+    "data": {
+      "transactions": [
         {
-          "amount": 500,
-          "date": "2023-09-01"
+          "id": "TXN-2025-001",
+          "date": "2025-06-15",
+          "type": "income",
+          "category": "sales",
+          "description": "পণ্য বিক্রয় - Product Sales",
+          "amount": 125000.00,
+          "currency": "BDT",
+          "accountFrom": "Sales Revenue",
+          "accountTo": "Cash",
+          "reference": "INV-2025-0156",
+          "status": "completed",
+          "createdBy": "system",
+          "tags": ["sales", "revenue"]
         },
         {
-          "amount": 1000,
-          "date": "2023-09-15"
+          "id": "TXN-2025-002",
+          "date": "2025-06-15",
+          "type": "expense",
+          "category": "materials",
+          "description": "কাঁচামাল ক্রয় - Raw Materials Purchase",
+          "amount": -75000.00,
+          "currency": "BDT",
+          "accountFrom": "Cash",
+          "accountTo": "Inventory",
+          "reference": "PO-2025-0089",
+          "status": "completed",
+          "createdBy": "admin",
+          "tags": ["purchase", "inventory"]
         },
         {
-          "amount": 1000,
-          "date": "2023-10-01"
+          "id": "TXN-2025-003",
+          "date": "2025-06-14",
+          "type": "expense",
+          "category": "payroll",
+          "description": "কর্মচারী বেতন - Employee Salary",
+          "amount": -45000.00,
+          "currency": "BDT",
+          "accountFrom": "Cash",
+          "accountTo": "Salary Expense",
+          "reference": "PAY-2025-06",
+          "status": "completed",
+          "createdBy": "hr_system",
+          "tags": ["payroll", "salary"]
         }
-      ]
-    },
-    {
-      "id": 2,
-      "name": "Jane Smith",
-      "email": "janesmith@example.com",
-      "phone": "+1234567891",
-      "location": "Khulna",
-      "donation_count": 3,
-      "total_paid": 1200,
-      "pledged_amount": 1500,
-      "pending_amount": 300,
-      "payment_percentage": 80.00,
-      "status": "Active Donor",
-      "last_payment_date": "2023-10-10",
-      "days_remaining": 45,
-      "preferred_payment_method": "Bank Transfer",
-      "all_payment_ending_date": "2023-11-25",
-      "company_percentage": 10,
-      "payment_history": [
+      ],
+      "pagination": {
+        "currentPage": 1,
+        "totalPages": 25,
+        "totalRecords": 248,
+        "recordsPerPage": 10
+      }
+    }
+  },
+
+  "accounts": {
+    "success": true,
+    "data": {
+      "assets": [
         {
-          "amount": 600,
-          "date": "2023-09-05"
+          "id": "ACC-001",
+          "name": "Cash",
+          "nameInBangla": "নগদ অর্থ",
+          "type": "current_asset",
+          "balance": 850000.00,
+          "currency": "BDT",
+          "lastTransaction": "2025-06-15T10:15:00Z"
         },
         {
-          "amount": 600,
-          "date": "2023-09-20"
+          "id": "ACC-002",
+          "name": "Accounts Receivable",
+          "nameInBangla": "প্রাপ্য হিসাব",
+          "type": "current_asset",
+          "balance": 450000.00,
+          "currency": "BDT",
+          "lastTransaction": "2025-06-14T15:20:00Z"
+        },
+        {
+          "id": "ACC-003",
+          "name": "Inventory",
+          "nameInBangla": "মালামাল",
+          "type": "current_asset",
+          "balance": 320000.00,
+          "currency": "BDT",
+          "lastTransaction": "2025-06-15T09:45:00Z"
         }
-      ]
-    },
-    {
-      "id": 3,
-      "name": "Raj Patel",
-      "email": "rajpatel@example.com",
-      "phone": "+1234567892",
-      "location": "Khulna",
-      "donation_count": 1,
-      "total_paid": 500,
-      "pledged_amount": 1000,
-      "pending_amount": 500,
-      "payment_percentage": 50.00,
-      "status": "Needs Reminder",
-      "last_payment_date": "2023-09-20",
-      "days_remaining": 60,
-      "preferred_payment_method": "Cash",
-      "all_payment_ending_date": "2023-11-20",
-      "company_percentage": 10,
-      "payment_history": [
+      ],
+      "liabilities": [
         {
-          "amount": 500,
-          "date": "2023-09-15"
-        }
-      ]
-    },
-    {
-      "id": 4,
-      "name": "Maria Garcia",
-      "email": "mariagarcia@example.com",
-      "phone": "+1234567893",
-      "location": "Khulna",
-      "donation_count": 0,
-      "total_paid": 0,
-      "pledged_amount": 0,
-      "pending_amount": 0,
-      "payment_percentage": 0.00,
-      "status": "No Pledge",
-      "last_payment_date": null,
-      "days_remaining": null,
-      "preferred_payment_method": null,
-      "all_payment_ending_date": "2025-04-25",
-      "company_percentage": 0,
-      "payment_history": []
-    },
-    {
-      "id": 5,
-      "name": "Ahmed Khan",
-      "email": "ahmedkhan@example.com",
-      "phone": "+1234567894",
-      "location": "Khulna",
-      "donation_count": 4,
-      "total_paid": 4000,
-      "pledged_amount": 4000,
-      "pending_amount": 0,
-      "payment_percentage": 100.00,
-      "status": "Fully Paid",
-      "last_payment_date": "2023-10-05",
-      "days_remaining": 0,
-      "preferred_payment_method": "Mobile Banking",
-      "all_payment_ending_date": "2023-10-05",
-      "company_percentage": 10,
-      "payment_history": [
-        {
-          "amount": 1000,
-          "date": "2023-09-01"
+          "id": "ACC-101",
+          "name": "Accounts Payable",
+          "nameInBangla": "প্রদেয় হিসাব",
+          "type": "current_liability",
+          "balance": 280000.00,
+          "currency": "BDT",
+          "lastTransaction": "2025-06-13T14:30:00Z"
         },
         {
-          "amount": 1000,
-          "date": "2023-09-15"
-        },
-        {
-          "amount": 1000,
-          "date": "2023-09-30"
-        },
-        {
-          "amount": 1000,
-          "date": "2023-10-05"
-        }
-      ]
-    },
-    {
-      "id": 6,
-      "name": "Emily Davis",
-      "email": "emilydavis@example.com",
-      "phone": "+1234567895",
-      "location": "Khulna",
-      "donation_count": 2,
-      "total_paid": 1500,
-      "pledged_amount": 2000,
-      "pending_amount": 500,
-      "payment_percentage": 75.00,
-      "status": "Active Donor",
-      "last_payment_date": "2023-09-25",
-      "days_remaining": 20,
-      "preferred_payment_method": "Bank Transfer",
-      "all_payment_ending_date": "2023-10-15",
-      "company_percentage": 10,
-      "payment_history": [
-        {
-          "amount": 500,
-          "date": "2023-09-10"
-        },
-        {
-          "amount": 1000,
-          "date": "2023-09-25"
-        }
-      ]
-    },
-    {
-      "id": 7,
-      "name": "Linh Tran",
-      "email": "linhtran@example.com",
-      "phone": "+1234567896",
-      "location": "Khulna",
-      "donation_count": 1,
-      "total_paid": 1000,
-      "pledged_amount": 1000,
-      "pending_amount": 0,
-      "payment_percentage": 100.00,
-      "status": "Fully Paid",
-      "last_payment_date": "2023-10-01",
-      "days_remaining": 0,
-      "preferred_payment_method": "Cash",
-      "all_payment_ending_date": "2023-10-01",
-      "company_percentage": 10,
-      "payment_history": [
-        {
-          "amount": 1000,
-          "date": "2023-10-01"
-        }
-      ]
-    },
-    {
-      "id": 8,
-      "name": "David Wilson",
-      "email": "davidwilson@example.com",
-      "phone": "+1234567897",
-      "location": "Khulna",
-      "donation_count": 2,
-      "total_paid": 750,
-      "pledged_amount": 1000,
-      "pending_amount": 250,
-      "payment_percentage": 75.00,
-      "status": "Active Donor",
-      "last_payment_date": "2023-09-30",
-      "days_remaining": 15,
-      "preferred_payment_method": "Mobile Banking",
-      "all_payment_ending_date": "2023-10-15",
-      "company_percentage": 10,
-      "payment_history": [
-        {
-          "amount": 500,
-          "date": "2023-09-15"
-        },
-        {
-          "amount": 250,
-          "date": "2023-09-30"
-        }
-      ]
-    },
-    {
-      "id": 9,
-      "name": "Sophia Lee",
-      "email": "sophialee@example.com",
-      "phone": "+1234567898",
-      "location": "Khulna",
-      "donation_count": 0,
-      "total_paid": 0,
-      "pledged_amount": 500,
-      "pending_amount": 500,
-      "payment_percentage": 0.00,
-      "status": "Not Paid Yet",
-      "last_payment_date": null,
-      "days_remaining": 10,
-      "preferred_payment_method": "Bank Transfer",
-      "all_payment_ending_date": "2023-10-20",
-      "company_percentage": 0,
-      "payment_history": []
-    },
-    {
-      "id": 10,
-      "name": "Carlos Lopez",
-      "email": "carloslopez@example.com",
-      "phone": "+1234567899",
-      "location": "Khulna",
-      "donation_count": 6,
-      "total_paid": 3000,
-      "pledged_amount": 3000,
-      "pending_amount": 0,
-      "payment_percentage": 100.00,
-      "status": "Fully Paid",
-      "last_payment_date": "2023-09-28",
-      "days_remaining": 0,
-      "preferred_payment_method": "Cash",
-      "all_payment_ending_date": "2023-09-28",
-      "company_percentage": 10,
-      "payment_history": [
-        {
-          "amount": 1000,
-          "date": "2023-09-01"
-        },
-        {
-          "amount": 1000,
-          "date": "2023-09-15"
-        },
-        {
-          "amount": 1000,
-          "date": "2023-09-28"
+          "id": "ACC-102",
+          "name": "Tax Payable",
+          "nameInBangla": "প্রদেয় কর",
+          "type": "current_liability",
+          "balance": 95000.00,
+          "currency": "BDT",
+          "lastTransaction": "2025-06-10T11:00:00Z"
         }
       ]
     }
-  ]
+  },
+
+  "payroll": {
+    "success": true,
+    "data": {
+      "summary": {
+        "totalEmployees": 52,
+        "totalGrossSalary": 468000.00,
+        "totalDeductions": 63000.00,
+        "totalNetSalary": 405000.00,
+        "payPeriod": "2025-06",
+        "status": "processed"
+      },
+      "employees": [
+        {
+          "id": "EMP-001",
+          "name": "আহমেদ হাসান",
+          "designation": "সিনিয়র অ্যাকাউন্টেন্ট",
+          "basicSalary": 25000.00,
+          "allowances": {
+            "houseRent": 12500.00,
+            "medical": 2500.00,
+            "transport": 3000.00
+          },
+          "grossSalary": 43000.00,
+          "deductions": {
+            "incomeTax": 4300.00,
+            "providentFund": 2150.00
+          },
+          "netSalary": 36550.00,
+          "payDate": "2025-06-01",
+          "status": "paid"
+        }
+      ]
+    }
+  },
+
+  "tax_compliance": {
+    "success": true,
+    "data": {
+      "upcomingDeadlines": [
+        {
+          "id": "TAX-001",
+          "type": "income_tax_return",
+          "name": "আয়কর রিটার্ন",
+          "dueDate": "2025-06-30",
+          "daysRemaining": 15,
+          "status": "pending",
+          "estimatedAmount": 125000.00,
+          "priority": "high"
+        },
+        {
+          "id": "TAX-002",
+          "type": "vat_return",
+          "name": "ভ্যাট রিটার্ন",
+          "dueDate": "2025-06-22",
+          "daysRemaining": 7,
+          "status": "in_progress",
+          "estimatedAmount": 85000.00,
+          "priority": "urgent"
+        },
+        {
+          "id": "TAX-003",
+          "type": "withholding_tax",
+          "name": "উৎস কর",
+          "dueDate": "2025-07-05",
+          "daysRemaining": 20,
+          "status": "pending",
+          "estimatedAmount": 45000.00,
+          "priority": "medium"
+        }
+      ],
+      "taxSummary": {
+        "currentYear": 2025,
+        "totalTaxLiability": 255000.00,
+        "taxPaid": 180000.00,
+        "taxPending": 75000.00,
+        "complianceScore": 92.5
+      }
+    }
+  },
+
+  "financial_reports": {
+    "success": true,
+    "data": {
+      "profit_loss": {
+        "period": "2025-06",
+        "revenue": {
+          "salesRevenue": 2750000.00,
+          "otherIncome": 125000.00,
+          "totalRevenue": 2875000.00
+        },
+        "expenses": {
+          "costOfGoodsSold": 1200000.00,
+          "operatingExpenses": {
+            "salaries": 450000.00,
+            "rent": 80000.00,
+            "utilities": 35000.00,
+            "marketing": 125000.00
+          },
+          "totalExpenses": 1890000.00
+        },
+        "netIncome": 985000.00,
+        "profitMargin": 34.26
+      },
+      "balance_sheet": {
+        "asOfDate": "2025-06-15",
+        "assets": {
+          "currentAssets": {
+            "cash": 850000.00,
+            "accountsReceivable": 450000.00,
+            "inventory": 320000.00,
+            "total": 1620000.00
+          },
+          "fixedAssets": {
+            "equipment": 2800000.00,
+            "buildings": 1500000.00,
+            "accumulatedDepreciation": -720000.00,
+            "total": 3580000.00
+          },
+          "totalAssets": 5200000.00
+        },
+        "liabilities": {
+          "currentLiabilities": {
+            "accountsPayable": 280000.00,
+            "taxPayable": 95000.00,
+            "shortTermDebt": 125000.00,
+            "total": 500000.00
+          },
+          "longTermLiabilities": {
+            "longTermDebt": 1600000.00,
+            "total": 1600000.00
+          },
+          "totalLiabilities": 2100000.00
+        },
+        "equity": {
+          "paidInCapital": 2000000.00,
+          "retainedEarnings": 1100000.00,
+          "totalEquity": 3100000.00
+        }
+      }
+    }
+  },
+
+  "security_events": {
+    "success": true,
+    "data": {
+      "events": [
+        {
+          "id": "SEC-001",
+          "timestamp": "2025-06-15T10:28:00Z",
+          "type": "login_success",
+          "user": "admin@company.com",
+          "description": "সফল লগইন - Successful login",
+          "ipAddress": "192.168.1.100",
+          "severity": "info"
+        },
+        {
+          "id": "SEC-002",
+          "timestamp": "2025-06-15T09:00:00Z",
+          "type": "backup_completed",
+          "user": "system",
+          "description": "ডেটা ব্যাকআপ সম্পন্ন - Data backup completed",
+          "severity": "info"
+        },
+        {
+          "id": "SEC-003",
+          "timestamp": "2025-06-15T07:00:00Z",
+          "type": "system_update",
+          "user": "system",
+          "description": "নিরাপত্তা প্যাচ ইনস্টল - Security patch installed",
+          "severity": "info"
+        }
+      ],
+      "securityStatus": {
+        "dataProtection": "secure",
+        "accessControl": "active",
+        "auditTrail": "enabled",
+        "backupStatus": "completed",
+        "lastBackup": "2025-06-15T09:00:00Z",
+        "overallScore": 98.5
+      }
+    }
+  },
+
+  "ai_insights": {
+    "success": true,
+    "data": {
+      "analysis": {
+        "financialHealth": "stable",
+        "profitability": "good",
+        "cashFlow": "positive",
+        "riskLevel": "low",
+        "recommendations": [
+          "বিনিয়োগ বৃদ্ধি করুন - Increase investment",
+          "খরচ নিয়ন্ত্রণে রাখুন - Control expenses",
+          "নগদ প্রবাহ উন্নত করুন - Improve cash flow"
+        ]
+      },
+      "predictions": {
+        "nextMonthRevenue": 2950000.00,
+        "nextMonthExpenses": 1980000.00,
+        "predictedProfit": 970000.00,
+        "confidence": 87.5
+      },
+      "alerts": [
+        {
+          "type": "cash_flow",
+          "message": "নগদ প্রবাহ স্বাভাবিক - Cash flow is normal",
+          "severity": "info"
+        },
+        {
+          "type": "tax_deadline",
+          "message": "ভ্যাট রিটার্নের সময়সীমা ঘনিয়ে আসছে - VAT return deadline approaching",
+          "severity": "warning"
+        }
+      ]
+    }
+  },
+
+  "error_response": {
+    "success": false,
+    "error": {
+      "code": "INSUFFICIENT_FUNDS",
+      "message": "অপর্যাপ্ত তহবিল - Insufficient funds",
+      "details": "Account balance is too low for this transaction"
+    }
+  }
 }
