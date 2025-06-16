@@ -1,0 +1,106 @@
+{
+  "date": "2025-06-16",
+  "productSales": [
+    {
+      "productId": "P001",
+      "productName": "Burger",
+      "priceBreakdown": [
+        {
+          "unitPrice": 140,
+          "quantitySold": 60,
+          "totalAmount": 8400
+        },
+        {
+          "unitPrice": 150,
+          "quantitySold": 40,
+          "totalAmount": 6000
+        }
+      ],
+      "totalSales": 14400
+    },
+    {
+      "productId": "P002",
+      "productName": "Pizza",
+      "priceBreakdown": [
+        {
+          "unitPrice": 290,
+          "quantitySold": 30,
+          "totalAmount": 8700
+        },
+        {
+          "unitPrice": 300,
+          "quantitySold": 20,
+          "totalAmount": 6000
+        }
+      ],
+      "totalSales": 14700
+    }
+  ],
+  "dailyIncome": 29100,
+  "dailyExpenses": [
+    {
+      "expenseId": "E001",
+      "expenseType": "Raw Materials",
+      "amount": 12000
+    },
+    {
+      "expenseId": "E002",
+      "expenseType": "Labour Cost",
+      "amount": 5000
+    },
+    {
+      "expenseId": "E003",
+      "expenseType": "Delivery Cost",
+      "amount": 2000
+    },
+    {
+      "expenseId": "E004",
+      "expenseType": "Utilities",
+      "amount": 1000
+    }
+  ],
+  "totalExpenses": 20000,
+  "profitOrLoss": {
+    "netProfit": 9100,
+    "status": "Profit"
+  },
+  "inventoryUpdate": [
+    {
+      "productId": "P001",
+      "productName": "Burger",
+      "stockRemaining": 50
+    },
+    {
+      "productId": "P002",
+      "productName": "Pizza",
+      "stockRemaining": 30
+    }
+  ],
+  "cashFlow": {
+    "cashIn": 29100,
+    "cashOut": 20000,
+    "closingBalance": 9100
+  },
+  "paymentsAndDues": {
+    "customerDues": [
+      {
+        "customerId": "C001",
+        "customerName": "Mr. X",
+        "dueAmount": 2000
+      }
+    ],
+    "supplierPayments": [
+      {
+        "supplierId": "S001",
+        "supplierName": "ABC Suppliers",
+        "dueAmount": 5000
+      }
+    ]
+  },
+  "taxAndCompliance": {
+    "vatApplicable": true,
+    "vatAmount": 1500,
+    "taxPaid": false
+  },
+  "reportGeneratedAt": "2025-06-16T20:00:00Z"
+}
