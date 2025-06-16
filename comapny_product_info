@@ -8,12 +8,12 @@
         {
           "unitPrice": 140,
           "quantitySold": 60,
-          "totalAmount": 800
+          "totalAmount": 8400
         },
         {
           "unitPrice": 150,
           "quantitySold": 40,
-          "totalAmount": 100
+          "totalAmount": 6000
         }
       ],
       "totalSales": 14400
@@ -25,7 +25,7 @@
         {
           "unitPrice": 290,
           "quantitySold": 30,
-          "totalAmount": 800
+          "totalAmount": 8700
         },
         {
           "unitPrice": 300,
@@ -34,9 +34,43 @@
         }
       ],
       "totalSales": 14700
+    },
+    {
+      "productId": "P003",
+      "productName": "Fries",
+      "priceBreakdown": [
+        {
+          "unitPrice": 80,
+          "quantitySold": 100,
+          "totalAmount": 8000
+        },
+        {
+          "unitPrice": 90,
+          "quantitySold": 50,
+          "totalAmount": 4500
+        }
+      ],
+      "totalSales": 12500
+    },
+    {
+      "productId": "P004",
+      "productName": "Soft Drink",
+      "priceBreakdown": [
+        {
+          "unitPrice": 50,
+          "quantitySold": 120,
+          "totalAmount": 6000
+        },
+        {
+          "unitPrice": 60,
+          "quantitySold": 80,
+          "totalAmount": 4800
+        }
+      ],
+      "totalSales": 10800
     }
   ],
-  "dailyIncome": 2100,
+  "dailyIncome": 52400,
   "dailyExpenses": [
     {
       "expenseId": "E001",
@@ -57,11 +91,21 @@
       "expenseId": "E004",
       "expenseType": "Utilities",
       "amount": 1000
+    },
+    {
+      "expenseId": "E005",
+      "expenseType": "Marketing",
+      "amount": 3000
+    },
+    {
+      "expenseId": "E006",
+      "expenseType": "Maintenance",
+      "amount": 1500
     }
   ],
-  "totalExpenses": 20000,
+  "totalExpenses": 26500,
   "profitOrLoss": {
-    "netProfit": 9100,
+    "netProfit": 25900,
     "status": "Profit"
   },
   "inventoryUpdate": [
@@ -74,12 +118,22 @@
       "productId": "P002",
       "productName": "Pizza",
       "stockRemaining": 30
+    },
+    {
+      "productId": "P003",
+      "productName": "Fries",
+      "stockRemaining": 70
+    },
+    {
+      "productId": "P004",
+      "productName": "Soft Drink",
+      "stockRemaining": 100
     }
   ],
   "cashFlow": {
-    "cashIn": 29100,
-    "cashOut": 20000,
-    "closingBalance": 9100
+    "cashIn": 52400,
+    "cashOut": 26500,
+    "closingBalance": 25900
   },
   "paymentsAndDues": {
     "customerDues": [
@@ -87,6 +141,16 @@
         "customerId": "C001",
         "customerName": "Mr. X",
         "dueAmount": 2000
+      },
+      {
+        "customerId": "C002",
+        "customerName": "Ms. Y",
+        "dueAmount": 1500
+      },
+      {
+        "customerId": "C003",
+        "customerName": "Mr. Z",
+        "dueAmount": 1000
       }
     ],
     "supplierPayments": [
@@ -94,13 +158,27 @@
         "supplierId": "S001",
         "supplierName": "ABC Suppliers",
         "dueAmount": 5000
+      },
+      {
+        "supplierId": "S002",
+        "supplierName": "XYZ Foods",
+        "dueAmount": 3000
+      },
+      {
+        "supplierId": "S003",
+        "supplierName": "Fresh Farms",
+        "dueAmount": 2000
       }
     ]
   },
   "taxAndCompliance": {
     "vatApplicable": true,
-    "vatAmount": 1500,
-    "taxPaid": false
+    "vatAmount": 2500,
+    "taxPaid": false,
+    "incomeTax": {
+      "amount": 4000,
+      "dueDate": "2025-07-15"
+    }
   },
   "reportGeneratedAt": "2025-06-16T20:00:00Z"
 }
