@@ -8,12 +8,12 @@
         {
           "unitPrice": 140,
           "quantitySold": 60,
-          "totalAmount": 8400
+          "totalAmount": 800
         },
         {
           "unitPrice": 150,
           "quantitySold": 40,
-          "totalAmount": 6000
+          "totalAmount": 100
         }
       ],
       "totalSales": 14400
@@ -25,7 +25,7 @@
         {
           "unitPrice": 290,
           "quantitySold": 30,
-          "totalAmount": 8700
+          "totalAmount": 800
         },
         {
           "unitPrice": 300,
